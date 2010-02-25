@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-  map.root :controller => 'teams', :action => 'index'
+map.new_session :controller => 'teams', :action => 'index'
+  map.root :new_session
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
