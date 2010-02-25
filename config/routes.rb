@@ -1,5 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
   map.root :controller => "teams", :action => "index"
+  map.awards '/awards', :controller => 'teams', :action => 'awards'
+  map.calendar '/calendar', :controller => 'teams', :action => 'calendar'
+  map.contacts '/contacts', :controller => 'teams', :action => 'contacts'
+  map.links '/links', :controller => 'teams', :action => 'links'
+  map.localforms '/localforms', :controller => 'teams', :action => 'localforms'
+  map.localnews '/localnews', :controller => 'teams', :action => 'localnews'
+  map.awards '/officers', :controller => 'teams', :action => 'officers'
+  map.awards '/playerstowatch', :controller => 'teams', :action => 'playerstowatch'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
